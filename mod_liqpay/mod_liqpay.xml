@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Liqpay Form</name>
+    <author>Vicumg</author>
+    <version>1.0.0</version>
+    <description>Liqpay button</description>
+    <files>
+        <filename>mod_liqpay.xml</filename>
+        <filename module="mod_liqpay">mod_liqpay.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+
+    <config>
+        <fields name="params">
+            <fieldset name="advanced">
+        <field
+                name="description"
+                type="text"
+                label="Текст назначение платежа"
+                description="Текст назначение платежа" />
+                <field
+                        name="public_key"
+                        type="text"
+                        label="Публичный ключ"
+                />
+                <field
+                        name="private_key"
+                        type="text"
+                        label="Приватный ключ"
+                />
+                <field
+                        name="amount"
+                        type="text"
+                        label="Сумма по умолчанию"
+                />
+            </fieldset>
+        </fields>
+
+    </config>
+</extension>
